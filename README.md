@@ -1,6 +1,6 @@
-# examples
+# flutter course examples
 
-A new Flutter project.
+Flutter full course of Veli Bacik examples.
 
 ## Getting Started
 
