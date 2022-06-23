@@ -25,6 +25,7 @@ import '101/stateless_learn.dart';
 import '101/text_field_learn.dart';
 import '202/cache/shared_learn_cache.dart';
 import '202/model_learn_view.dart';
+import '202/service/package_learn.dart';
 import '202/service/service_learn_view.dart';
 import '202/service/service_post_learn_view.dart';
 import '202/tab_learn.dart';
@@ -46,16 +47,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData.light().copyWith(
-          appBarTheme: AppBarTheme(
-            backgroundColor: Colors.blue[700],
-            centerTitle: true,
-            systemOverlayStyle:
-                SystemUiOverlayStyle(statusBarColor: Colors.transparent),
-          ),
-          progressIndicatorTheme:
-              ProgressIndicatorThemeData(color: Colors.white)),
-      home: CallBackLearn(),
+      theme: ThemeData.dark().copyWith(
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.transparent,
+          centerTitle: true,
+          systemOverlayStyle:
+              SystemUiOverlayStyle(statusBarColor: Colors.transparent),
+        ),
+      ),
+      home: PackageLearnView(),
     );
   }
 }
